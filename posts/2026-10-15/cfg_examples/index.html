@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>Compilers and Interpreters</title>
+    <link rel="icon" type="image/x-icon" href="/COMNotes/assets/notebook.ico">
+    <link rel="stylesheet" href="/COMNotes/css/style.css">
+</head>
+
+<body>
+<div class="sheet">
+    <div class="left-menu">
+        <div class="card">
+            <h1><a href="/COMNotes/">Compilers and Interpreters</a></h1>
+            <img src="https://www.cameronsworld.net/img/ui/catscape-loader.gif">
+            <p>Notes by <a class="secret_link" href="https://pokeizel.itch.io/" target="_blank">Aradia Aguilar-Vargas</a></p>
+            <div class="subcard">
+                
+                <details open="">
+                    <summary>2026/08/06</summary>
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/peternaur/">Peter Naur (1928 - 2016)</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/bigfour/">The Big Four</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/fortran/">FORTRAN</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/lisp/">LISP</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/cobol/">COBOL</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/algol/">ALGOL</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/vonNeumannArchitecture/">von Neumann Architecture</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/reminders/">Reminders</a></li> </ul> 
+                    
+                </details>
+                
+                <details open="">
+                    <summary>2026/10/15</summary>
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/sentential_forms/">Sentential Forms</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/lmrm_derivation/">Leftmost-Rightmost Derivation</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/cfg_examples/">Examples of Context-Free Grammars</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/cfg_equivalence/">Context-Free Grammar Equivalence</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/regular_grammar/">Regular Grammars</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/fa_rg_equivalence/">Finite Automata and Regular Grammar Equivalence</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/fa_to_rg/">Finite Automata to Regular Grammar Algorithm</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/fa_to_rg_examples/">Examples of Finite Automata to Regular Grammar Algorithm</a></li> </ul> 
+                    
+                </details>
+                
+            </div>
+            <img width="100%" src="https://web.archive.org/web/20090903064746im_/http://geocities.com/x3cats/Images/tabchase.gif">
+        </div>
+    </div>
+
+    <div class="right-menu">
+        <div class="card">
+            <h2>Examples of Context-Free Grammars</h2>
+            <div class="image-frame">
+A CFG that generates a language of strings of 1 or more 'a's.
+<blockquote>
+<p>S → a<br>
+S → aS</p>
+</blockquote>
+</div>
+<div class="image-frame">
+A CFG that generates a language of strings of 0 or more 'a's.
+<blockquote>
+<p>S → ε<br>
+S → aS</p>
+</blockquote>
+</div>
+<div class="image-frame">
+A CFG that generates a language over Σ = {0, 1} of strings that end in 1.
+<blockquote>
+<p>S → A1<br>
+A → 1A | 0A | ε</p>
+</blockquote>
+</div>
+<div class="image-frame">
+A CFG that generates a language over Σ = {0, 1} of strings that start with 0 and end in 1.
+<blockquote>
+<p>S → 0A1<br>
+A → 0A | 1A | ε</p>
+</blockquote>
+</div>
+<div class="image-frame">
+A CFG that generates the language {aⁿbᵐ | n > 0, m > 0} over Σ = {a, b}.
+<blockquote>
+<p>S → AB<br>
+A → a | aA<br>
+B → b | bB</p>
+</blockquote>
+</div>
+<div class="image-frame">
+A CFG that generates the language {aⁿbᵐ | n ≥ 0, m ≥ 0} over Σ = {a, b}.
+<blockquote>
+<p>S → AB<br>
+A → ε | aA<br>
+B → ε | bB</p>
+</blockquote>
+</div>
+<div class="image-frame">
+A CFG that generates the language {aⁿbᵐaⁿ | n > 0, m > 0} over Σ ={a, b}.
+<blockquote>
+<p>S → aSa<br>
+S → aBa<br>
+B → bB<br>
+B → b</p>
+</blockquote>
+</div>
+<div class="image-frame">
+A CFG that generates the language {aⁿbᵐcᵐd²ⁿ | n >= 0, m > 0} over Σ = {a, b, c, d}.
+<blockquote>
+<p>S → aSdd | X<br>
+X → bXc | bc</p>
+</blockquote>
+</div>
+<div class="image-frame">
+A CFG that generates palindromes over Σ = {0, 1}.
+<blockquote>
+<p>S → 0S0 | 1S1 | ε | 0 | 1</p>
+</blockquote>
+</div>
+<div class="image-frame">
+A CFG that generates palindromes over Σ = {0, 1} with odd length and a 1 in the middle.
+<blockquote>
+<p>S → 1 | 1S1 | 0S0</p>
+</blockquote>
+</div>
+<div class="image-frame">
+A CFG that generates the language {aⁿbᵐ | 0 ≤ n ≤ m ≤ 2n} over Σ = {a, b}.
+<blockquote>
+<p>S → ε | aSb | aSbb</p>
+</blockquote>
+</div>
+<div class="image-frame">
+A CFG that generates the language {aⁿbⁿ | n ≥ 0 } over Σ = {a, b}.<br>
+<blockquote>
+<p>S → ε | aSb</p>
+</blockquote>
+<p>This creates the first irregular language we made some time ago.</p>
+</div>
+<div class="image-frame">
+A CFG that generates the language of strings of correctly-nested parentheses.
+<blockquote>
+<p>S → ε | (S) | SS</p>
+</blockquote>
+</div>
+<div class="image-frame">
+A CFG that generates a language of arithmetic expressions with +, -, *, and parentheses.
+<blockquote>
+<p>Exp → Exp OP Exp<br>
+Exp → (Exp)<br>
+Exp → &lt;number&gt;<br>
+OP → + | - | *</p>
+</blockquote>
+<p>This is a language we'll be trashing and laughing at in the following lectures.</p>
+</div>
+<br>
+<a href="/COMNotes/posts/2026-10-15/cfg_equivalence">==> Context-Free Grammar Equivalence</a><br>
+<br>
+<a href="/COMNotes/posts/2026-10-15/lmrm_derivation">Go Back</a><br>
+<br>
+        </div>
+    </div>
+</div>
+</body>
+</html>

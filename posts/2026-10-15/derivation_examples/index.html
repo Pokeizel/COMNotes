@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>Compilers and Interpreters</title>
+    <link rel="icon" type="image/x-icon" href="/COMNotes/assets/notebook.ico">
+    <link rel="stylesheet" href="/COMNotes/css/style.css">
+</head>
+
+<body>
+<div class="sheet">
+    <div class="left-menu">
+        <div class="card">
+            <h1><a href="/COMNotes/">Compilers and Interpreters</a></h1>
+            <img src="https://www.cameronsworld.net/img/ui/catscape-loader.gif">
+            <p>Notes by <a class="secret_link" href="https://pokeizel.itch.io/" target="_blank">Aradia Aguilar-Vargas</a></p>
+            <div class="subcard">
+                
+                <details open="">
+                    <summary>2026/08/06</summary>
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/peternaur/">Peter Naur (1928 - 2016)</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/bigfour/">The Big Four</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/fortran/">FORTRAN</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/lisp/">LISP</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/cobol/">COBOL</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/algol/">ALGOL</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/vonNeumannArchitecture/">von Neumann Architecture</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/reminders/">Reminders</a></li> </ul> 
+                    
+                </details>
+                
+                <details open="">
+                    <summary>2026/10/15</summary>
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/derivation_examples/">Sentential Forms</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/lm_rm_derivation/">Leftmost-Rightmost Derivation</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/cfg_examples/">Examples of Context-Free Grammars</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/regular_grammar/">Regular Grammar</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/fa_rg_equivalence/">Finite Automata and Regular Grammar Equivalence</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/fa_to_rg/">Finite Automata to Regular Grammar Algorithm</a></li> </ul> 
+                    
+                </details>
+                
+            </div>
+            <img width="100%" src="https://web.archive.org/web/20090903064746im_/http://geocities.com/x3cats/Images/tabchase.gif">
+        </div>
+    </div>
+
+    <div class="right-menu">
+        <div class="card">
+            <h2>Sentential Forms</h2>
+            <div class="subcard">
+<h3>Definitions</h3>
+Let G be a Context-Free Grammar where G = (V, Σ, P, S).<br>
+<blockquote>
+<ol>
+<li>The string w ∈ (V ∪ Σ)* is a sentential form of G if, and only if, S ⇒* w.</li>
+<li>The string w ∈ Σ* is a sentence of G if, and only if, S ⇒* w.</li>
+<li>The language of G (denoted L(G)) is the set<br>
+{v | v ∈ Σ* ^ S ⇒* w }.</li>
+<li>The language of G is the set of all sentences of G.</li>
+</ol>
+</blockquote>
+</div>
+<div class="image-frame">
+<h3>Example</h3>
+If the context-free grammar G is...
+<blockquote>
+<p>E → E + E<br>
+E → E * E<br>
+E → a<br>
+E → b</p>
+</blockquote>
+<p>then its sentential forms are...</p>
+<blockquote>
+<p>{E, E + E, E + E * E, E * E, a, a + a, b, ...}</p>
+</blockquote>
+<p>and the language of G is...</p>
+<blockquote>
+<p>{a, b, a + a, a + b, a * a, b + a * b, b + b + b + b + b + b, ...}</p>
+</blockquote>
+</div>
+<br>
+<a href="/COMNotes/posts/2026-10-15/lmrm_derivation">==> Leftmost-Rightmost Derivation</a><br>
+<br>
+<a href="/COMNotes/">Go Back</a><br>
+<br>
+<img style="display: block; margin-left: auto; margin-right: auto;" width="100%" src="/COMNotes/assets/cfg.gif">
+        </div>
+    </div>
+</div>
+</body>
+</html>

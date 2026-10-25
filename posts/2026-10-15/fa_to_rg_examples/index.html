@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>Compilers and Interpreters</title>
+    <link rel="icon" type="image/x-icon" href="/COMNotes/assets/notebook.ico">
+    <link rel="stylesheet" href="/COMNotes/css/style.css">
+</head>
+
+<body>
+<div class="sheet">
+    <div class="left-menu">
+        <div class="card">
+            <h1><a href="/COMNotes/">Compilers and Interpreters</a></h1>
+            <img src="https://www.cameronsworld.net/img/ui/catscape-loader.gif">
+            <p>Notes by <a class="secret_link" href="https://pokeizel.itch.io/" target="_blank">Aradia Aguilar-Vargas</a></p>
+            <div class="subcard">
+                
+                <details open="">
+                    <summary>2026/08/06</summary>
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/peternaur/">Peter Naur (1928 - 2016)</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/bigfour/">The Big Four</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/fortran/">FORTRAN</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/lisp/">LISP</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/cobol/">COBOL</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/algol/">ALGOL</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/vonNeumannArchitecture/">von Neumann Architecture</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/reminders/">Reminders</a></li> </ul> 
+                    
+                </details>
+                
+                <details open="">
+                    <summary>2026/10/15</summary>
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/sentential_forms/">Sentential Forms</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/lmrm_derivation/">Leftmost-Rightmost Derivation</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/cfg_examples/">Examples of Context-Free Grammars</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/cfg_equivalence/">Context-Free Grammar Equivalence</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/regular_grammar/">Regular Grammars</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/fa_rg_equivalence/">Finite Automata and Regular Grammar Equivalence</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/fa_to_rg/">Finite Automata to Regular Grammar Algorithm</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/fa_to_rg_examples/">Examples of Finite Automata to Regular Grammar Algorithm</a></li> </ul> 
+                    
+                </details>
+                
+            </div>
+            <img width="100%" src="https://web.archive.org/web/20090903064746im_/http://geocities.com/x3cats/Images/tabchase.gif">
+        </div>
+    </div>
+
+    <div class="right-menu">
+        <div class="card">
+            <h2>Examples of Finite Automata to Regular Grammar Algorithm</h2>
+            <h3>Examples</h3>
+<div class="image-frame">
+<img style="display: block; margin-left: auto; margin-right: auto;" width="100%" src="/COMNotes/assets/dfarg1.png"><br>
+DFA for a language over Σ = {0, 1} of strings ending in 0. The algorithm turns it into this regular grammar:<br>
+<blockquote>
+<p>A → 1A | 0B<br>
+B → 0B | 1A | ε</p>
+</blockquote>
+</div>
+<div class="image-frame">
+<img style="display: block; margin-left: auto; margin-right: auto;" width="100%" src="/COMNotes/assets/dfarg2.png"><br>
+DFA for a language over Σ = {0, 1} of strings not ending in 00. The algorithm turns it into this regular grammar:<br>
+<blockquote>
+<p>A → 1A | 0B | ε<br>
+B → 0C | 1A | ε
+B → 0C | 1A</p>
+</blockquote>
+</div>
+<div class="image-frame">
+<img style="display: block; margin-left: auto; margin-right: auto;" width="100%" src="/COMNotes/assets/dfarg3.png"><br>
+DFA for a language over Σ = {G, C, A, T} of strings not containing the substring "GAGA". The algorithm turns it into this regular grammar:<br>
+<blockquote>
+<p>S → GP | CS | AS | TS | ε<br>
+P → GP | CS | AQ | TS | ε<br>
+Q → GR | CS | AS | TS | ε<br>
+R → GP | TS | CS | ε</p>
+</blockquote>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" width="50%" src="https://i.pinimg.com/736x/bd/60/7d/bd607d397c4fb16e49946f279c4cc351.jpg"><br></p>
+</div>
+<br>
+<a href="/COMNotes/">==> Homepage</a><br>
+<br>
+<a href="/COMNotes/posts/2026-10-15/fa_to_rg">Go Back</a><br>
+<br>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

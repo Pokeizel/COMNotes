@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>Compilers and Interpreters</title>
+    <link rel="icon" type="image/x-icon" href="/COMNotes/assets/notebook.ico">
+    <link rel="stylesheet" href="/COMNotes/css/style.css">
+</head>
+
+<body>
+<div class="sheet">
+    <div class="left-menu">
+        <div class="card">
+            <h1><a href="/COMNotes/">Compilers and Interpreters</a></h1>
+            <img src="https://www.cameronsworld.net/img/ui/catscape-loader.gif">
+            <p>Notes by <a class="secret_link" href="https://pokeizel.itch.io/" target="_blank">Aradia Aguilar-Vargas</a></p>
+            <div class="subcard">
+                
+                <details open="">
+                    <summary>2026/08/06</summary>
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/peternaur/">Peter Naur (1928 - 2016)</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/bigfour/">The Big Four</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/fortran/">FORTRAN</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/lisp/">LISP</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/cobol/">COBOL</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/algol/">ALGOL</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/vonNeumannArchitecture/">von Neumann Architecture</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-08-06/reminders/">Reminders</a></li> </ul> 
+                    
+                </details>
+                
+                <details open="">
+                    <summary>2026/10/15</summary>
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/sentential_forms/">Sentential Forms</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/lmrm_derivation/">Leftmost-Rightmost Derivation</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/cfg_examples/">Examples of Context-Free Grammars</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/cfg_equivalence/">Context-Free Grammar Equivalence</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/regular_grammar/">Regular Grammars</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/fa_rg_equivalence/">Finite Automata and Regular Grammar Equivalence</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/fa_to_rg/">Finite Automata to Regular Grammar Algorithm</a></li> </ul> 
+                    
+                    <ul> <li><a href="/COMNotes/posts/2026-10-15/fa_to_rg_examples/">Examples of Finite Automata to Regular Grammar Algorithm</a></li> </ul> 
+                    
+                </details>
+                
+            </div>
+            <img width="100%" src="https://web.archive.org/web/20090903064746im_/http://geocities.com/x3cats/Images/tabchase.gif">
+        </div>
+    </div>
+
+    <div class="right-menu">
+        <div class="card">
+            <h2>Regular Grammars</h2>
+            <div class="subcard">
+<h3>Definition</h3>
+A regular grammar is a context-free grammar G = (V, Σ, P, S) where all the rules have one of the following forms:
+<blockquote>
+<ol>
+<li>A → a (non-terminal → terminal)</li>
+<li>A → aB (non-terminal → terminal non-terminal)</li>
+<li>A → ε (non-terminal → ε)</li>
+</ol>
+</blockquote>
+<p>With 'A' and 'B' being members of V and 'a' being a member of Σ, a fourth possible form appears:</p>
+<blockquote>
+<ol start="4">
+<li>A → B (non-terminal → non-terminal)</li>
+</ol>
+</blockquote>
+</div>
+<div class="image-frame">
+<h3>Example</h3>
+A regular grammar that generates the language (ab)⁺a* | ε.
+<blockquote>
+<p>S → aB | ε<br>
+B → bS | bA<br>
+A → aA | ε</p>
+</blockquote>
+</div>
+<br>
+<a href="/COMNotes/posts/2026-10-15/fa_rg_equivalence">==> Finite Automata and Regular Grammar Equivalence</a><br>
+<br>
+<a href="/COMNotes/posts/2026-10-15/cfg_equivalence">Go Back</a><br>
+<br>
+        </div>
+    </div>
+</div>
+</body>
+</html>
